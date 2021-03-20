@@ -9,13 +9,13 @@ let maskDetected = false;
 let oldMaskDetected;
 
 (async function() {
-    modelMask = await tf.loadLayersModel("/models/modelMask.json");
+    modelMask = await tf.loadLayersModel("models/modelMask.json");
 })();
 
 const video = document.getElementById('video')
 
 Promise.all([
-    faceapi.nets.ssdMobilenetv1.loadFromUri('/models')
+    faceapi.nets.ssdMobilenetv1.loadFromUri('models')
 ]).then(startVideo)
 
 function startVideo() {
