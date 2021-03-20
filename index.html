@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Datamarkin - StopCovid</title>
+    <script src="/js/tfjs.js"></script>
+    <script defer src="/js/face-api.min.js"></script>
+    <script defer src="/js/script.js"></script>
+    <link rel="stylesheet" href="/css/bulma.min.css">
+    <link rel="stylesheet" href="/css/child.css">
+</head>
+<body>
+
+<section class="hero is-fullheight" id="data-container" style="background-color: #3298dc">
+    <div class="hero-body">
+        <div class="container">
+            <div class="columns is-multiline is-vcentered">
+                <div class="column is-12 has-text-centered data-fs10vw">
+                    <h1 id="data-header-title">Patience...</h1>
+                </div>
+                <div class="column is-4"></div>
+                <div class="column is-4">
+                    <figure class="image is-1by1 data-mask-figure">
+                        <img id="data-image" class="is-rounded" src="/images/face-mask.png">
+                    </figure>
+                </div>
+                <div class="column is-4"></div>
+                <div class="column is-12 has-text-centered data-fs4vw">
+                    <h1 id="data-footer-title">Le système se prépare...</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="magic" id="magic">
+    <video id="video" width="1" height="1" autoplay muted></video>
+    <canvas id="facecanvas" width="224" height="224"></canvas>
+</div>
+
+<a href="https://datamarkin.com" target="_blank"><img class="logo" src="/images/logo.png"></a>
+
+</body>
+
+
+</html>
