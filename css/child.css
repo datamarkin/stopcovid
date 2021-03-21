@@ -28,3 +28,8 @@
   right: 20px;
   height: 30px;
 }
+.data-mask-figure img {
+  max-width: 70vw;
+  max-height: 70vw;
+  margin: auto;
+}
