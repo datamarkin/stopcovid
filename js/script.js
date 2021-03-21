@@ -66,6 +66,11 @@ video.addEventListener('play', () => {
             // try to eliminate false (non detections)
             avgDetectionResult = average(0, detectionArray);
         } else {
+            if (maskDetected) {
+                oldMaskDetected = false
+            } else {
+                oldMaskDetected = true
+            }
             document.getElementById("data-container").style.backgroundColor = "#3298dc";
             document.getElementById("data-header-title").innerHTML = "ATTENTION!";
             document.getElementById("data-footer-title").innerHTML = "RAPPROCHEZ-VOUS DE L'ECRAN";
