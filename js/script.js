@@ -79,6 +79,7 @@ video.addEventListener('play', () => {
 
 })
 
+tf.engine().startScope()
 async function checkMask() {
     const faceImage = document.getElementById('facecanvas');
 
@@ -97,6 +98,7 @@ async function checkMask() {
         maskDetected = true
     }
 }
+tf.engine().endScope()
 
 function changeContent () {
     if (avgMaskResult < 0.5) {
